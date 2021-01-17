@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.icone-teste {
+    color: white;
+}
+
+.navbar-color {
+    background-color:#111821;
+}
+
+.img {
+    background-image: url('https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0;
+    position: relative;
+}
+
+.img-corpo {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+}
+
+.corpo {
+    background-color: #2A2828;
+}
+
+.cor-padrao {
+    color: #56046B;
+}
+
+.teste {
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 5px solid #56046B;
+}
+
+.icone-html {
+    color: #E54D26;
+    font-size: 60px;
+}
+
+.icone-css {
+    color:#3D8FC6;
+    font-size: 60px;
+}
+
+.icone-js {
+    color:#F0DB4F;
+    font-size: 60px;
+}
+
+.icone-node {
+    color: #83CD27;
+    font-size: 60px;
+}
+
+.icone-react {
+    color:#61DAFB;
+    font-size: 60px;
+}
+
+.icone-bootstrap {
+    color:#563D7C;
+    font-size: 60px;
+}
+
+.icone-linux {
+   color: #000000;
+    font-size: 60px;
+}
+
+.icone-git {
+    color: #EC4F29;
+     font-size: 60px;
+ }
+
+ @media (min-width: 360px) { 
+    
+    .sobre-mim h1 {
+        font-size: 40px;
+    }
+
+    .sobre-mim p {
+        font-size: 20px;
+    }
+
+    .skills h2 {
+        font-size: 30px;
+    }
+
+    .skills p {
+        font-size: 20px;
+    }
+  }
