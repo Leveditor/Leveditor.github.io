@@ -31,7 +31,7 @@
 }
 
 .cor-padrao {
-    color: #5C0DA5;
+    color: #7813D7;
 }
 
 .teste {
@@ -39,20 +39,20 @@
     margin-bottom: 25px;
     font-weight: bold;
     padding-left: 10px;
-    border-left: 5px solid#5C0DA5;
+    border-left: 5px solid #7813D7;
 }
 
-.icone-html {
+.icone-html, .icone-html-projeto {
     color: #E54D26;
     font-size: 60px;
 }
 
-.icone-css {
+.icone-css, .icone-css-projeto {
     color:#3D8FC6;
     font-size: 60px;
 }
 
-.icone-js {
+.icone-js, .icone-js-projeto {
     color:#F0DB4F;
     font-size: 60px;
 }
@@ -67,7 +67,7 @@
     font-size: 60px;
 }
 
-.icone-bootstrap {
+.icone-bootstrap, .icone-bootstrap-projeto {
     color:#563D7C;
     font-size: 60px;
 }
@@ -81,6 +81,45 @@
     color: #EC4F29;
      font-size: 60px;
  }
+
+.borda-projetos {
+    border: 3px solid #563D7C;
+}
+
+.icone-html-projeto, .icone-css-projeto, .icone-bootstrap-projeto, .icone-js-projeto{
+      font-size: 30px;
+}
+
+.botao-projeto {
+    background-color: #563D7C;
+    padding: 5px 20px;
+    border-radius: 7px;
+}
+
+.botao-projeto:hover {
+    background-color:#530378;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.hr {
+    background-color: #563D7C;
+    
+}
+
+.icones-contato {
+    font-size: 25px;
+}
+
+.icones-rede {
+    font-size: 35px;
+    color: white;
+}
+
+.icones-rede:hover {
+    transition: .5s;
+    color: #563D7C;
+}
 
  @media (min-width: 360px) { 
     
@@ -98,5 +137,15 @@
 
     .skills p {
         font-size: 20px;
+    }
+
+    .projetos {
+        width: 300px;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .projetos {
+        width: 450px;
     }
   }
