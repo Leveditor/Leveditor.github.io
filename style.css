@@ -1,16 +1,41 @@
 * {
     margin: 0;
     padding: 0;
-    
+    scroll-behavior: smooth;
 }
 
-.icone-teste {
+body {
+    background-color: #2A2828 !important;
+
+}
+
+.icone-menu {
     color: white;
 }
 
 .navbar-color {
     background-color:#111821;
 }
+
+.nav-link:hover {
+    color: #1967AF !important;
+    transition: .5s;
+}
+
+#buttonTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    color: #1967AF;
+}
+
 
 .img {
     background-image: url('https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
@@ -31,7 +56,15 @@
 }
 
 .cor-padrao {
-    color: #7813D7;
+    color:#1967AF;
+}
+
+.divs {
+    padding: 20px;
+}
+
+.espaco {
+    margin-top: 35px;
 }
 
 .borda-lateral {
@@ -39,7 +72,7 @@
     margin-bottom: 25px;
     font-weight: bold;
     padding-left: 10px;
-    border-left: 5px solid #7813D7;
+    border-left: 5px solid #1967AF;
 }
 
 .icone-html, .icone-html-projeto {
@@ -68,22 +101,27 @@
 }
 
 .icone-bootstrap, .icone-bootstrap-projeto {
-    color:#563D7C;
+    color:#1967AF;
     font-size: 60px;
 }
 
 .icone-linux {
    color: #000000;
-    font-size: 60px;
+   font-size: 60px;
 }
+
+.icone-github {
+    color: #000000;
+    font-size: 20px;
+ }
 
 .icone-git {
     color: #EC4F29;
-     font-size: 60px;
+    font-size: 60px;
  }
 
 .borda-projetos {
-    border: 3px solid #563D7C;
+    border: 3px solid #1967AF;
 }
 
 .icone-html-projeto, .icone-css-projeto, .icone-bootstrap-projeto, .icone-js-projeto{
@@ -91,7 +129,7 @@
 }
 
 .botao-projeto {
-    background-color: #563D7C;
+    background-color:#1967AF;
     padding: 5px 20px;
     border-radius: 7px;
 }
@@ -103,7 +141,7 @@
 }
 
 .hr {
-    background-color: #563D7C;
+    background-color: #1967AF;
     
 }
 
