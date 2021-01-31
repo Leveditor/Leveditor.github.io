@@ -6,7 +6,6 @@
 
 body {
     background-color: #2A2828 !important;
-
 }
 
 .icone-menu {
@@ -142,7 +141,6 @@ body {
 
 .hr {
     background-color: #1967AF;
-    
 }
 
 .icones-contato {
@@ -157,6 +155,17 @@ body {
 .icones-rede:hover {
     transition: .5s;
     color: #563D7C;
+}
+
+@media (min-width: 320px) {
+
+    #buttonTop {
+        font-size: 35px;
+    }
+    
+    .projetos {
+        width: 300px;
+    }
 }
 
  @media (min-width: 360px) { 
