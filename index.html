@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leandro Barbosa</title>
 
-    <!-- CSS -->
+    <!-- IMPORTANDO O CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- BOOTSTRAP 4 -->
+    <!-- IMPORTANDO O BOOTSTRAP 4 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -22,8 +22,9 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-color fixed-top">
         <div class="container">
-
             <a class="navbar-brand text-white" href="#">Leandro Barbosa</a>
+
+            <!-- BOTÃO MENU HAMBURGER -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars icone-menu"></i>
@@ -52,17 +53,15 @@
     </nav>
 
     <!-- IMAGEM DE PERFIL -->
-    <div class="img text-center">
-        <img src="img/perfil.PNG"
-            alt="foto de perfil" class="img-corpo">
+    <div class="img-fundo text-center">
+        <img src="img/perfil.PNG" class="img-perfil" alt="foto de perfil">
     </div>
-
 
     <!-- ICONE DO BOTÃO TOP -->
     <i class="fas fa-arrow-up" onclick="topFunction()" id="buttonTop"></i>
 
     <!-- SOBRE MIM -->
-    <main class="divs" id="eu">
+    <main class="pt-5" id="eu">
         <div class="espaco">
             <div class="container text-white text-center sobre-mim">
                 <h1 class="cor-padrao">Sobre mim</h1>
@@ -84,7 +83,7 @@
 
 
     <!-- MINHAS HABILIDADES -->
-    <section class="divs container pt-5 skills" id="skill">
+    <section class="container pt-5 skills" id="skill">
         <div class="espaco">
             <h2 class="cor-padrao text-center mb-4">Minhas Skills</h2>
 
@@ -101,12 +100,12 @@
                     </div>
                     <!-- BACK-END -->
                     <div class="col-md pt-5 pt-md-0">
-                        <h2 class="borda-lateral  text-white">Back-end</h2>
+                        <h2 class="borda-lateral text-white">Back-end</h2>
                         <ion-icon name="logo-nodejs" class="icone-node"></ion-icon>
                     </div>
                     <!-- FRAMEWORK FRONT-END  -->
                     <div class="col-md pt-5 pt-md-0">
-                        <h2 class="borda-lateral  text-white">Framework Front-end</h2>
+                        <h2 class="borda-lateral text-white">Framework Front-end</h2>
                         <ion-icon name="logo-react" class="icone-react"></ion-icon>
                     </div>
                 </div>
@@ -114,9 +113,9 @@
 
             <div class="container mt-5">
                 <div class="row">
-                    <div class="col-md-4 ">
+                    <div class="col-md-4">
                         <!-- FRAMEWORK CSS -->
-                        <h2 class="borda-lateral  text-white">Framework css</h2>
+                        <h2 class="borda-lateral text-white">Framework css</h2>
                         <i class="fab fa-bootstrap icone-bootstrap"></i>
                     </div>
 
@@ -131,131 +130,163 @@
         </div>
     </section>
 
-    <!-- MEUS PROJETOS -->
-    <section class="div-projeto container pt-5" id="projetos">
-
+    <!-- PROJETOS PESSOAIS -->
+    <section class="container pt-5 p-5" id="projetos">
         <div class="espaco">
-            <h2 class="cor-padrao text-center mb-4">Projetos</h2>
+            <h2 class="cor-padrao text-center mb-4">Projetos pessoais</h2>
         </div>
 
-        <div class="container d-flex justify-content-around flex-wrap">
+        <!-- CONTAINER DOS PROJETOS -->
+        <div class="container d-flex justify-content-around flex-wrap pt-1 pt-md-3">
 
-            <!-- PROJETO CONVERSOR DE MOEDAS -->
-            <div class="borda-projetos mt-3 mt-md-0">
-                <img src="img/conversorMoedas.PNG" alt="tela de cadastro" class="projetos p-2">
+            <!-- CARD DO PROJETO CONVERSOR DE MOEDAS -->
+            <div class="borda-cards mb-3 mb-sm-5 mb-md-0">
+                <div>
+                    <img src="img/conversorMoedas.PNG" class="img-projetos p-2" alt="conversor de moedas">
+                </div>
 
-                <p class="text-white pl-2">Uma página para converter moedas que consome uma API</p>
-                <p class="text-white pl-2">Tecnologias usadas: HTML, CSS, REACT.JS</p>
+                <!-- CORPO DO CARD -->
+                <div>
+                    <p class="text-white pl-2">Uma página para converter moedas que consome uma API</p>
+                    <p class="text-white pl-2">Tecnologias usadas: HTML, CSS, REACT.JS</p>
 
-                <div class="d-md-flex justify-content-between mt-md-4">
-                    <div class="d-flex">
-                        <ion-icon name="logo-html5" class="icone-html-projeto pl-2"></ion-icon>
-                        <ion-icon name="logo-css3" class="icone-css-projeto pl-2"></ion-icon>
-                        <ion-icon name="logo-react" class="icone-react-projeto pl-2"></ion-icon>
-                    </div>
+                    <!-- ICONES DE TECNOLOGIAS -->
+                    <div class="d-md-flex justify-content-between mt-md-4">
+                        <div class="d-flex">
+                            <ion-icon name="logo-html5" class="icone-html-projeto pl-2"></ion-icon>
+                            <ion-icon name="logo-css3" class="icone-css-projeto pl-2"></ion-icon>
+                            <ion-icon name="logo-react" class="icone-react-projeto pl-2"></ion-icon>
+                        </div>
 
-                    <!-- BOTÕES DO CARD -->
-                    <div class="mr-2 pb-3 pt-3 pl-2 pb-md-0 pt-md-0 pl-md-0">
-                        <a href="https://github.com/Leveditor/conversorMoeda"
-                            class="botao-projeto text-white">Projeto no GitHub</a>
-                        <a href="https://nifty-allen-73ef37.netlify.app/" class="botao-projeto text-white">WEB</a>
+                        <!-- BOTÕES DO CARD -->
+                        <div class="mr-2 pb-3 pt-3 pl-2 pb-md-0 pt-md-0 pl-md-0">
+                            <a href="https://github.com/Leveditor/conversorMoeda"
+                                class="botao-github text-white">Projeto
+                                no GitHub</a>
+                            <a href="https://nifty-allen-73ef37.netlify.app/" class="botao-site text-white">WEB</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- PROJETO TELA LOGIN -->
-            <div class="borda-projetos mt-3 mt-md-0">
-                <img src="img/login.PNG" alt="tela de cadastro" class="projetos p-2">
+            <div class="borda-cards mb-3 mb-sm-5 mb-md-0">
+                <div>
+                    <img src="img/login.PNG" class="img-projetos p-2" alt="tela de login">
+                </div>
 
-                <p class="text-white pl-2">Uma simples tela de login</p>
-                <p class="text-white pl-2">Tecnologias usadas: HTML, CSS com FlexBox</p>
+                <!-- CORPO DO CARD -->
+                <div>
+                    <p class="text-white pl-2">Uma simples tela de login</p>
+                    <p class="text-white pl-2">Tecnologias usadas: HTML, CSS com FlexBox</p>
 
-                <div class="d-md-flex justify-content-between mt-4 pb-2">
-                    <div>
-                        <ion-icon name="logo-html5" class="icone-html-projeto pl-2"></ion-icon>
-                        <ion-icon name="logo-css3" class="icone-css-projeto pl-2"></ion-icon>
-                    </div>
+                    <div class="d-md-flex justify-content-between mt-4 pb-2">
+                        <div>
+                            <ion-icon name="logo-html5" class="icone-html-projeto pl-2"></ion-icon>
+                            <ion-icon name="logo-css3" class="icone-css-projeto pl-2"></ion-icon>
+                        </div>
 
-                    <!-- BOTÕES DO CARD -->
-                    <div class="mr-2 pb-3 pt-3 pl-2 pb-md-0 pt-md-0 pl-md-0">
-                        <a href="https://github.com/Leveditor/tela_login" class="botao-projeto text-white">Projeto no
-                            GitHub</a>
-                        <a href="https://jolly-fermi-db94ac.netlify.app/" class="botao-projeto text-white">WEB</a>
+                        <!-- BOTÕES DO CARD -->
+                        <div class="mr-2 pb-3 pt-3 pl-2 pb-md-0 pt-md-0 pl-md-0">
+                            <a href="https://github.com/Leveditor/tela_login" class="botao-github text-white">Projeto
+                                no
+                                GitHub</a>
+                            <a href="https://jolly-fermi-db94ac.netlify.app/" class="botao-site text-white">WEB</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container d-flex justify-content-around flex-wrap pt-5">
+        <!-- CONTAINER DOS PROJETOS -->
+        <div class="container d-flex justify-content-around flex-wrap pt-1 pt-md-3">
 
-            <!-- PORJETO TELA DE CARRO -->
-            <div class="borda-projetos">
-                <img src="img/carro.PNG" alt="tela de cadastro" class="projetos p-2">
+            <!-- CARD DO PORJETO SITE DE CARROS -->
+            <div class="borda-cards mb-3 mb-sm-5 mb-md-0">
+                <div>
+                    <img src="img/carro.PNG" class="img-projetos p-2" alt="site de carros">
+                </div>
 
-                <p class="text-white pl-2">Um site de catalagos de carros filtrando o catalago</p>
-                <p class="text-white pl-2">Tecnologias usadas: HTML, CSS e REACT.JS</p>
+                <!-- CORPO DO CARD -->
+                <div>
+                    <p class="text-white pl-2">Um site de catalagos de carros filtrando o catalago</p>
+                    <p class="text-white pl-2">Tecnologias usadas: HTML, CSS e REACT.JS</p>
 
-                <div class="d-md-flex justify-content-between mt-4">
-                    <div>
-                        <ion-icon name="logo-html5" class="icone-html-projeto pl-2"></ion-icon>
-                        <ion-icon name="logo-css3" class="icone-css-projeto pl-2"></ion-icon>
-                        <ion-icon name="logo-react" class="icone-react-projeto pl-2"></ion-icon>
-                    </div>
+                    <div class="d-md-flex justify-content-between mt-4">
+                        <!-- ICONES DE TECNOLOGIAS -->
+                        <div>
+                            <ion-icon name="logo-html5" class="icone-html-projeto pl-2"></ion-icon>
+                            <ion-icon name="logo-css3" class="icone-css-projeto pl-2"></ion-icon>
+                            <ion-icon name="logo-react" class="icone-react-projeto pl-2"></ion-icon>
+                        </div>
 
-                    <!-- BOTÕES DO CARD -->
-                    <div class="mr-2 pb-3 pt-3 pl-2 pb-md-0 pt-md-0 pl-md-0">
-                        <a href="https://github.com/Leveditor/catalago_de_carro"
-                            class="botao-projeto text-white">Projeto no GitHub</a>
-                        <a href="https://zealous-lamport-7a0713.netlify.app/" class="botao-projeto text-white">WEB</a>
+                        <!-- BOTÕES DO CARD -->
+                        <div class="mr-2 pb-3 pt-3 pl-2 pb-md-0 pt-md-0 pl-md-0">
+                            <a href="https://github.com/Leveditor/catalago_de_carro" class="botao-github text-white">Projeto no GitHub</a>
+                            <a href="https://zealous-lamport-7a0713.netlify.app/" class="botao-site text-white">WEB</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PROJETO TRANSPORTADORA -->
-            <div class="borda-projetos mt-3 mt-md-0">
-                <img src="img/transportadora.PNG" alt="tela de cadastro" class="projetos p-2">
+            <!-- CARD DO PROJETO TRANSPORTADORA -->
+            <div class="borda-cards mb-3 mb-sm-5 mb-md-0">
+                <div>
+                    <img src="img/transportadora.PNG" class="img-projetos p-2" alt="site transportadora">
+                </div>
 
-                <p class="text-white pl-2">Um site de transportadora com 6 páginas</p>
-                <p class="text-white pl-2">Tecnologias usadas: HTML, CSS, BOOTSTRAP 4 com Flexbox</p>
+                <!-- CORPO DO CARD -->
+                <div>
+                    <p class="text-white pl-2">Um site de transportadora com 6 páginas</p>
+                    <p class="text-white pl-2">Tecnologias usadas: HTML, CSS, BOOTSTRAP 4 com Flexbox</p>
 
-                <div class="d-md-flex justify-content-between mt-4">
-                    <div class="d-flex">
-                        <ion-icon name="logo-html5" class="icone-html-projeto pl-2"></ion-icon>
-                        <ion-icon name="logo-css3" class="icone-css-projeto pl-2"></ion-icon>
-                        <i class="fab fa-bootstrap icone-bootstrap-projeto pl-3"></i>
-                    </div>
+                    <div class="d-md-flex justify-content-between mt-4">
+                        <!-- ICONES DE TECNOLOGIAS -->
+                        <div class="d-flex">
+                            <ion-icon name="logo-html5" class="icone-html-projeto pl-2"></ion-icon>
+                            <ion-icon name="logo-css3" class="icone-css-projeto pl-2"></ion-icon>
+                            <i class="fab fa-bootstrap icone-projeto-bootstrap pl-2 mb-2"></i>
+                        </div>
 
-                    <!-- BOTÕES DO CARD -->
-                    <div class="mr-2 pb-3 pt-3 pl-2 pb-md-0 pt-md-0 pl-md-0">
-                        <a href="https://github.com/Leveditor/transportadora/tree/main"
-                            class="botao-projeto text-white">Projeto no GitHub</a>
-                        <a href="https://quizzical-sammet-ae6041.netlify.app/" class="botao-projeto text-white">WEB</a>
+                        <!-- BOTÕES DO CARD -->
+                        <div class="mr-2 pb-3 pt-3 pl-2 pb-md-0 pt-md-0 pl-md-0">
+                            <a href="https://github.com/Leveditor/transportadora/tree/main" class="botao-github text-white">Projeto no GitHub</a>
+                            <a href="https://quizzical-sammet-ae6041.netlify.app/" class="botao-site text-white">WEB</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="container d-flex justify-content-around pt-5">
-            <!-- PROJETO TELA DE CADASTRO -->
-            <div class="borda-projetos">
-                <img src="img/cadastro.PNG" alt="tela de cadastro" class="projetos p-2">
 
-                <p class="text-white pl-2">Uma tela de cadastro que faz todas as verificação</p>
-                <p class="text-white pl-2">Tecnologias usadas: HTML, CSS, BOOTSTRAP 4 e JS puro</p>
+            <!-- CARD PROJETO TELA DE CADASTRO -->
+            <div class="borda-cards mb-3 mb-sm-5 mb-md-0">
+                <div>
+                    <img src="img/cadastro.PNG" class="img-projetos p-2" alt="tela de cadastro">
+                </div>
 
-                <div class="d-md-flex justify-content-between mt-4">
-                    <div class="d-flex">
-                        <ion-icon name="logo-html5" class="icone-html-projeto pl-2"></ion-icon>
-                        <ion-icon name="logo-css3" class="icone-css-projeto pl-2"></ion-icon>
-                        <i class="fab fa-bootstrap icone-bootstrap-projeto pl-2 mb-2"></i>
-                        <ion-icon name="logo-javascript" class="icone-js-projeto pl-2"></ion-icon>
-                    </div>
+                <!-- CORPO DO CARD -->
+                <div>
+                    <p class="text-white pl-2">Uma tela de cadastro que faz todas as verificação</p>
+                    <p class="text-white pl-2">Tecnologias usadas: HTML, CSS, BOOTSTRAP 4 e JS puro</p>
 
-                    <!-- BOTÕES DO CARD -->
-                    <div class="mr-2 pb-3 pt-3 pl-2 pb-md-0 pt-md-0 pl-md-0">
-                        <a href="https://github.com/Leveditor/formulario" class="botao-projeto text-white">Projeto no
-                            GitHub</a>
-                        <a href="https://gifted-bohr-60f968.netlify.app/" class="botao-projeto text-white">WEB</a>
+                    <div class="d-md-flex justify-content-between mt-4">
+                        <!-- ICONES DE TECNOLOGIAS -->
+                        <div class="d-flex">
+                            <ion-icon name="logo-html5" class="icone-html-projeto pl-2"></ion-icon>
+                            <ion-icon name="logo-css3" class="icone-css-projeto pl-2"></ion-icon>
+                            <i class="fab fa-bootstrap icone-projeto-bootstrap pl-2 mb-2"></i>
+                            <ion-icon name="logo-javascript" class="icone-js-projeto pl-2"></ion-icon>
+                        </div>
+
+                        <!-- BOTÕES DO CARD -->
+                        <div class="mr-2 pb-3 pt-3 pl-2 pb-md-0 pt-md-0 pl-md-0">
+                            <a href="https://github.com/Leveditor/formulario" class="botao-github text-white">Projeto
+                                no
+                                GitHub</a>
+                            <a href="https://gifted-bohr-60f968.netlify.app/" class="botao-site text-white">WEB</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -263,7 +294,7 @@
 
         <!-- BOTÃO PARA VER TODOS OS PROJETO NO GITHUB -->
         <div class="d-flex justify-content-center mt-5">
-            <a href="https://github.com/Leveditor" class="botao-projeto text-white">Ver todos os projeto no
+            <a href="https://github.com/Leveditor" class="botao-github text-white">Ver todos os projeto no
                 GitHub</a>
         </div>
     </section>
@@ -279,7 +310,7 @@
 
             <div class="d-flex justify-content-center">
                 <ion-icon name="call-outline" class="icones-contato pr-2"></ion-icon>
-                <p class="text-center">(11)98361-8709</p>
+                <p class="text-center">(11) 98361-8709</p>
             </div>
         </div>
 
@@ -331,5 +362,4 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
