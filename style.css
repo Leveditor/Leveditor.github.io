@@ -47,8 +47,8 @@ body {
 }
 
 .img-corpo {
-    width: 175px;
-    height: 175px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
 }
 
@@ -79,6 +79,11 @@ body {
 .icone-css, .icone-css-projeto {
     color:#3D8FC6;
     font-size: 60px;
+}
+
+.icone-react-projeto {
+    color:#61DAFB;
+    font-size: 30px;
 }
 
 .icone-js, .icone-js-projeto {
