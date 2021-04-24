@@ -3,23 +3,43 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+/* COR DOS DETALHES AZUIS DO SITE */
+.cor-padrao {
+    color:#1967AF;
+}
 
 body {
     background-color: #2A2828 !important;
-}
-
-/* ICONE DO BOTÃO DO MENU */
-.icone-menu {
-    color: white;
 }
 
 .navbar-color {
     background-color:#111821;
 }
 
+/* ICONE DO BOTÃO DO MENU HAMBURGER */
+.icone-menu {
+    color: white;
+}
+
+/* ESTILO DOS LINKS DO MENU */
 .nav-link:hover {
     color: #1967AF !important;
     transition: .5s;
+}
+
+/* IMAGEM DE FUNDO */
+.img-fundo {
+    background-image: url('https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0;
+    position: relative;
+}
+
+.img-perfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
 }
 
 /* ESTILO DO BOTÃO TOP */
@@ -37,31 +57,11 @@ body {
     color: #1967AF;
 }
 
-/* IMAGEM DE FUNDO */
-.img {
-    background-image: url('https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    background-size: cover;
-    background-position: center;
-    padding: 10em 0;
-    position: relative;
-}
-
-.img-corpo {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-}
-
-/* COR DOS DETALHES AZUIS PELO SITE */
-.cor-padrao {
-    color:#1967AF;
-}
-
 .espaco {
-    margin-top: 35px;
+    margin-top: 45px;
 }
 
-/* BORDA LATERAL NA SESSÃO DE SKILLS */
+/* BORDA LATERAL NA DIV DE SKILLS */
 .borda-lateral {
     font-size: 24px;
     margin-bottom: 25px;
@@ -70,7 +70,7 @@ body {
     border-left: 5px solid #1967AF;
 }
 
-/* ICONES DA SESSÃO DE SKILLS */
+/* ICONES DA DIV DE SKILLS */
 .icone-html, .icone-html-projeto {
     color: #E54D26;
     font-size: 60px;
@@ -101,7 +101,7 @@ body {
     font-size: 60px;
 }
 
-.icone-bootstrap, .icone-bootstrap-projeto {
+.icone-bootstrap, .icone-projeto-bootstrap {
     color:#563D7C;
     font-size: 60px;
 }
@@ -122,25 +122,24 @@ body {
  }
 
  /* DIV DA SESSÃO DE PROJETOS */
-.div-projeto {
-    padding: 20px;
-}
-
-.borda-projetos {
+.borda-cards {
     border: 3px solid #1967AF;
 }
 
-.icone-html-projeto, .icone-css-projeto, .icone-bootstrap-projeto, .icone-js-projeto{
-      font-size: 30px;
+/* ICONES DOS PROJETOS */
+.icone-html-projeto, .icone-css-projeto, .icone-projeto-bootstrap, .icone-js-projeto{
+    font-size: 30px;
 }
 
-.botao-projeto {
+/* BOTÃO CARDS  */
+.botao-github, .botao-site {
     background-color:#1967AF;
     padding: 5px 20px;
     border-radius: 7px;
+    text-decoration: none;
 }
 
-.botao-projeto:hover {
+.botao-github:hover, .botao-site:hover {
     background-color:#041368;
     text-decoration: none;
     transition: .5s;
@@ -162,7 +161,7 @@ body {
 
 .icones-rede:hover {
     transition: .5s;
-    color: #563D7C;
+    color: #041368;
 }
 
 @media (min-width: 320px) {
@@ -171,7 +170,7 @@ body {
         font-size: 30px;
     }
     
-    .projetos {
+    .img-projetos {
         width: 300px;
     }
 }
@@ -194,13 +193,13 @@ body {
         font-size: 20px;
     }
 
-    .projetos {
+    .img-projetos {
         width: 300px;
     }
   }
 
   @media (min-width: 576px) {
-    .projetos {
+    .img-projetos {
         width: 450px;
     }
   }
