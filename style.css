@@ -121,13 +121,20 @@ body {
     font-size: 60px;
  }
 
+ .icone-mysql {
+    color: #FDFBFB;
+    font-size: 100px;
+ }
+
+
+
  /* DIV DA SESSÃO DE PROJETOS */
 .borda-cards {
     border: 3px solid #1967AF;
 }
 
 /* ICONES DOS PROJETOS */
-.icone-html-projeto, .icone-css-projeto, .icone-projeto-bootstrap, .icone-js-projeto{
+.icone-html-projeto, .icone-css-projeto, .icone-projeto-bootstrap, .icone-js-projeto {
     font-size: 30px;
 }
 
